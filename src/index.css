@@ -8,29 +8,41 @@ ul {
     padding-left: 30px;
 }
 
-.board-row:after {
-    clear: both;
-    content: "";
-    display: table;
+.title {
+    text-align: center;
+    color: red;
+    margin-top: 150px;
+}
+
+.board-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .status {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 50px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 50px;
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgb(75, 75, 75);
+    font-size: 42px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.redX {
+    color: red;
+}
+
+.blueO {
+    color: blue;
 }
 
 .square:focus {
@@ -44,6 +56,7 @@ ul {
 .game {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .game-info {
