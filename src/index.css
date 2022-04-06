@@ -55,10 +55,18 @@ ul {
 
 .game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-board {
+    display: flex;
     justify-content: center;
 }
 
 .game-info {
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 900;
 }
